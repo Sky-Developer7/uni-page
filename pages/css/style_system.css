@@ -1,0 +1,955 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: grid;
+    height: 80px;
+    grid-template-columns: 5fr 0.3fr;
+    grid-template-rows: 150px;
+    margin-top: 10px;
+    box-shadow: 0px 25px 20px -20px rgba(0,0,0,0.45);
+}
+
+.header > div#logo {
+    order: 2;
+    justify-self: end;
+    padding-top: 5px;
+    padding-right: 12px;
+}
+
+.header > div#logo > img {
+    width: 70px;
+    height: 70px;
+    padding-right: 5px;
+}
+
+.header > div#title {
+    order: 1;   
+    justify-self: end;
+}
+
+.header > div#title > h1 {
+    padding-top: 20px;
+    padding-right: 5px;
+    color: rgba(23,48,88,255);
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.system {
+    display: flex;
+    text-align: center;
+    gap: 50px;
+}
+
+.containers {
+    order: 1;
+    margin-top: 50px;
+    padding-left: 116px;
+    padding-right: 45px;
+}
+
+.containers1 {
+    order: 1;
+    margin-top: 50px;
+    padding-left: 55px;
+    padding-right: 5px;
+}
+
+.items{
+    order: 2;
+    text-align: center;
+    width: 300px;
+}
+
+.hr {
+    background-color: rgba(23,48,88,255);
+}
+
+.items {
+    background-color: rgba(23,48,88,255);
+    height: 695px;
+    box-shadow: -25px 0px 20px -20px rgba(0,0,0,0.45);
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+}
+
+.items > div > a {
+    text-decoration: none;
+    line-height: 30px;
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 50px;
+
+}
+
+.items > div > a > i {
+   margin-left: 0px;
+}
+
+.items > div > a:hover {
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/* style menu*/
+
+.dropdown_menu {
+    display: none;
+}
+
+.dropdown_menu > a {
+    margin-right: 120px;
+    padding-top: 5px;
+    text-decoration: none;
+    text-align: right;
+    color: white;
+    line-height: 10px;
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+}
+
+
+.dropdown_menu > a:hover{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.rotate {
+    transform: rotate(270deg);
+}
+
+.dropdown {
+    color: white;
+    margin-right: 10px;
+}
+
+
+
+/*style for background of the admin page*/
+
+.img_background {
+    padding-top: 50px;
+    width: 150px;
+}
+
+
+/* inf_student style */
+
+
+.box {
+    width: 995px;
+    height: 410px;
+    line-height: 50px;
+    border: 1px solid rgba(23,48,88,255);
+    box-shadow: 0px -25px 20px -32px rgba(0,0,0,0.45),
+    25px 0px 20px -32px rgba(0,0,0,0.45),
+    0px 25px 20px -32px rgba(0,0,0,0.45),
+    -25px 0px 20px -32px rgba(0,0,0,0.45);
+    border-radius: 15px;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.box4 {
+    width: 995px;
+    height: 310px;
+    line-height: 50px;
+    border: 1px solid rgba(23,48,88,255);
+    box-shadow: 0px -25px 20px -32px rgba(0,0,0,0.45),
+    25px 0px 20px -32px rgba(0,0,0,0.45),
+    0px 25px 20px -32px rgba(0,0,0,0.45),
+    -25px 0px 20px -32px rgba(0,0,0,0.45);
+    border-radius: 15px;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.box1 {
+    width: 995px;
+    height: 440px;
+    line-height: 50px;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.box1 > h1{
+    color: rgba(23,48,88,255);
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.box1 > h3, h4{
+    color: rgba(23,48,88,255);
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.box2 {
+    width: 995px;
+    height: 540px;
+    line-height: 50px;
+    border: 1px solid rgba(23,48,88,255);
+    box-shadow: 0px -25px 20px -32px rgba(0,0,0,0.45),
+    25px 0px 20px -32px rgba(0,0,0,0.45),
+    0px 25px 20px -32px rgba(0,0,0,0.45),
+    -25px 0px 20px -32px rgba(0,0,0,0.45);
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-top: 35px;
+    z-index: 1;
+    margin-left: 16px;
+}
+
+
+.box3 {
+    width: 530px;
+    height: 200px;
+    line-height: 50px;
+    border: 1px solid rgba(23,48,88,255);
+    box-shadow: 0px -25px 20px -32px rgba(0,0,0,0.45),
+    25px 0px 20px -32px rgba(0,0,0,0.45),
+    0px 25px 20px -32px rgba(0,0,0,0.45),
+    -25px 0px 20px -32px rgba(0,0,0,0.45);
+    border-radius: 15px;
+    margin-top: 60px;
+    padding: 10px;
+    padding-left: 25px;
+    margin-right: 175px;
+    margin-left: 290px;
+}
+
+.box3 > form > h5 {
+    color: rgba(23,48,88,255);
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.row_1 > div > input {
+    text-align: center;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(23,48,88,255);
+}
+
+.row_2 > div > input {
+    text-align: center;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(23,48,88,255);
+}
+
+.row_3 > div > input {
+    text-align: center;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(23,48,88,255);
+}
+
+.box2::after {
+    content:'';
+    background: url('../images/logo.png') no-repeat center center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.2; 
+    padding-left: 220px;
+}
+
+.h_id_student {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(23,48,88,255);
+    padding-left: 340px;
+    padding-bottom: 30px;
+}
+
+@media print {
+    body {
+      visibility: hidden;
+    }
+    #print {
+      visibility: visible;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: 320px;
+      padding: 10px;
+      padding-top: 35px;
+      margin-left: 70px;
+    }
+    .box2::after {
+        content:'';
+        background: url('../images/logo.png') no-repeat center center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width:100%;
+        height:100%;
+        z-index:-1;
+        opacity: 0.2; 
+        padding-left: 50px;
+    }
+  }
+
+
+.btn {
+    width: 70px;
+    height: 30px;
+    border: 1px yellowgreen solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: yellowgreen;
+    color: white;
+    cursor: pointer;
+}
+
+.btn a:hover {
+    color: white;
+}
+
+.btn > a {
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+    padding: 3px;
+}
+.h_login_student {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: rgba(23,48,88,255);
+}
+
+.list_btn {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    gap: 5px;
+}
+
+.list_btn1 {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 180px;
+    gap: 5px;
+}
+
+.list_btn4 {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 410px;
+    gap: 5px;
+}
+
+.btn_delete4 {
+    width: 70px;
+    height: 30px;
+    border: 1px red solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.btn_delete4:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.btn_delete4 a:hover {
+    color: white;
+}
+
+.btn_delete4 > a {
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+    padding: 3px;
+}
+
+.btn_edit4 {
+   width: 70px;
+   height: 30px;
+    border: 1px blue solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.btn_edit4:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.btn_edit4 a:hover {
+    color: white;
+}
+
+.btn_edit4 > a {
+    border: none;
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+    padding: 3px;
+    cursor: pointer;
+}
+
+.list_btn3 {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    padding-left: 160px;
+    gap: 5px;
+}
+
+table tr th {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(23,48,88,255);
+}
+
+.btn_delete3 {
+    width: 70px;
+    height: 30px;
+    border: 1px red solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.btn_delete3:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_delete3 a:hover {
+    color: white;
+}
+
+.btn_delete3 > a {
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+    padding: 3px;
+}
+
+.btn_edit3 {
+   width: 70px;
+   height: 30px;
+    border: 1px blue solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.btn_edit3:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.btn_edit3 a:hover {
+    color: white;
+}
+
+.btn_edit3 > a {
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+    padding: 3px;
+}
+
+.btn_delete {
+    width: 70px;
+    height: 30px;
+    border: 1px red solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.btn_delete:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_delete a:hover {
+    color: white;
+}
+
+.btn_delete > a {
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+    padding: 3px;
+}
+
+.btn_edit {
+   width: 70px;
+   height: 30px;
+    border: 1px blue solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.btn_edit:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.btn_edit a:hover {
+    color: white;
+}
+
+.btn_edit > a {
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+    padding: 3px;
+}
+
+.btn_delete1 {
+    width: 70px;
+    height: 30px;
+    border: 1px red solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.btn_delete1:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_delete1 a:hover {
+    color: white;
+}
+
+.btn_delete1 > a {
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+    padding: 3px;
+}
+
+.btn_edit1 {
+   width: 70px;
+   height: 30px;
+    border: 1px blue solid;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.btn_edit1:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.btn_edit1 a:hover {
+    color: white;
+}
+
+.btn_edit1 > a {
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+    padding: 3px;
+}
+
+
+.printer {
+    width: 80px;
+    height: 35px;
+     border: 1px blue solid;
+     border-radius: 15px;
+     background-color: white;
+     font-family: 'Alexandria', sans-serif;
+     font-weight: 300;
+     font-size: 14px;
+     margin-top: 15px;
+     margin-right: 850px;
+     color: rgba(23,48,88,255);
+}
+ 
+.printer:hover {
+     background-color: blue;
+     color: white;
+     cursor: pointer;
+ }
+
+
+.row_04 > div > h6 {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 65px;
+    padding-top: 100px;
+}
+
+.row_5 > div {
+    margin-right: 760px;
+}
+
+#name1, #name2, #name3, #name4{
+    border: 1px solid rgba(23,48,88,255);
+    border-radius: 5px;
+    outline: none;
+    width: 167px;
+    height: 25px;
+}
+
+#name1:focus, #name2:focus, #name3:focus, #name4:focus {
+    text-align: right;
+    border: 1px greenyellow solid;
+}
+
+#c_n, #birth, #phone {
+    border: 1px solid rgba(23,48,88,255);
+    border-radius: 5px;
+    outline: none;
+    width: 155px;
+    height: 25px;
+}
+
+#c_n:focus, #birth:focus, #phone:focus {
+    text-align: right;
+    border: 1px greenyellow solid;
+}
+
+#id_student, #specialization, #semester, #s_year {
+    border: 1px solid rgba(23,48,88,255);
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 45px;
+    width: 155px;
+    height: 25px;
+}
+
+#search {
+    border: 1px solid rgba(23,48,88,255);
+    border-radius: 5px;
+    outline: none;
+    width: 155px;
+    height: 25px;
+}
+
+#search:focus {
+    text-align: right;
+    border: 1px greenyellow solid;
+}
+
+#id_student:focus, #specialization:focus, #semester:focus, #s_year:focus {
+    text-align: right;
+    border: 1px greenyellow solid;
+}
+
+#id, #pass {
+    border: 1px solid rgba(23,48,88,255);
+    border-radius: 5px;
+    outline: none;
+    width: 155px;
+    height: 25px;
+}
+
+#id:focus, #pass:focus {
+    text-align: right;
+    border: 1px greenyellow solid;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+      margin: 0;
+}
+
+.box > form > h5 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(23,48,88,255);
+}
+
+.box4 > form > h5 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(23,48,88,255);
+}
+
+.containers > h5 {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(23,48,88,255);
+    padding-bottom: 30px;
+    margin-left: 150px;
+}
+
+.row_01 {display: flex;
+    padding-left: 8px;
+    margin-top: 25px;
+}
+
+.row_01 > div > label {
+    padding-left: 8px;
+    padding-right: 16px;
+}
+
+.row_1 {display: flex;
+    padding-left: 8px;
+}
+
+.row_1 > div > label {
+    padding-left: 8px;
+    padding-right: 16px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 15.5px;
+    color: rgba(23,48,88,255);
+}
+
+.row_2 {
+    display: flex;
+    padding-left: 100px;
+}
+
+.row_2 > div > label {
+    padding-left: 8px;
+    padding-right: 16px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 15.5px;
+    color: rgba(23,48,88,255);
+}
+
+.row_0 {
+    display: flex;
+    padding-left: 325px;
+    margin-bottom: 20px;
+}
+
+.row_0 > div > input {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(23,48,88,255);
+    text-align: center;
+}
+
+.row_0 > div > label {
+    padding-left: 8px;
+    padding-right: 16px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 15.5px;
+    color: rgba(23,48,88,255);
+}
+
+
+
+.row_3 {display: flex;
+    padding-left: 5px;
+}
+
+.row_3 > div > label {
+    padding-left: 8px;
+    padding-right: 16px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 15.5px;
+    color: rgba(23,48,88,255);
+}
+
+.row_4 {
+    display: flex;
+    gap: 16px;
+    padding-left: 250px;
+}
+
+.row_4 > div > label {
+    padding-left: 8px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 15.5px;
+    color: rgba(23,48,88,255);
+}
+
+
+.row_04 {
+    display: flex;
+    gap: 8px;
+}
+
+.row_04 > div > label {
+    padding-left: 8px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 15.5px;
+    color: rgba(23,48,88,255);
+}
+
+.row_04 > div > input {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(23,48,88,255);
+    text-align: center;
+}
+
+.row_4 > div > input {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(23,48,88,255);
+    text-align: center;
+}
+
+#check {
+    padding-right: 20px;
+}
+
+#check > input {
+    margin-left: 10px;
+}
+
+#check_box {
+    accent-color: yellowgreen;
+}
+
+/* style footer */
+
+.footer > div#copyright {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px -25px 20px -16px rgba(23,48,88,0.5),
+    25px 0px 20px -20px rgba(23,48,88,0.5),
+    0px 25px 20px -20px rgba(23,48,88,0.5),
+    -25px 0px 20px -20px rgba(23,48,88,0.5);
+    color: black;
+    padding-top: 3px;
+}
+
+
+.i_d, .pass_word {
+    border: 1px solid rgba(23,48,88,255);
+    border-radius: 5px;
+    outline: none;
+    width: 155px;
+    height: 20px;
+}
+
+.pass_word {
+    margin-left: 80px;
+}
+
+.specializ {
+    margin-left: 90px;
+}
+
+.specializ, .sem, .year {
+    border: 1px solid rgba(23,48,88,255);
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 45px;
+    width: 155px;
+    height: 20px;
+}
+
+#btn_search {
+   width: 70px;
+   height: 30px;
+    padding-bottom: 5px;
+    border: 1px aqua solid;
+    border-radius: 15px;
+    background-color: white;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+#btn_search:hover {
+    background-color: aqua;
+    color: white;
+    cursor: pointer;
+}
+
+table {
+    margin-top: 10px;
+}
+
+table, tr, th, td {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+    width: 1095px;
+    border-collapse: collapse;
+    border: 1px rgba(23,48,88,255) solid;
+}
+
+.btn_delete > a {
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+}
+
+.btn_edit > a {
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgba(23,48,88,255);
+}
+
+.alert {
+    padding-left: 400px;
+}
